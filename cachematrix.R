@@ -34,7 +34,8 @@ cacheSolve <- function(x, ...) {
 		}
 		matrixdata <- x$getmatrix()
 		inv <- solve(matrixdata, ...)
-		## save the calculated inv to above "makeCacheMatrix" function
+	## save the calculated inv to above "makeCacheMatrix" function
+	## now we have the inv and it can be cached later
 		x$setinv(inv)
 		return(inv)
 
